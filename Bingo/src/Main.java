@@ -40,6 +40,13 @@ public class Main {
                 }
             }
         }
+        for (int j = 0; j < 9; j++) {
+            if(tabla[0][j]>tabla[1][j]){
+                int temp= tabla[0][j];
+                tabla[0][j]=tabla[1][j];
+                tabla[1][j]= temp;
+            }
+        }
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 9; j++) {
                 System.out.print(tabla[i][j] + " ");
