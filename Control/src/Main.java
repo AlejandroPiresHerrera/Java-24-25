@@ -4,6 +4,16 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static int fil;
+    private static int col;
+    void imprimirMatriz(String[][] matriz) {
+        for (int i = 0; i < fil; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.println(matriz[i][j]) ;
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         //creacion de variables: tamaño de la matriz, matriz de numeros, matriz de letras y elemento Random
@@ -12,6 +22,9 @@ public class Main {
         Random ale = new Random();
         int matriznumeros[][] = new int[filas][columnas];
         String matrizLetras[][] = new String[filas][columnas];
+
+        matrizletras.imprimirMatriz;
+
 
         // asignamos a cada casilla de la matriz de numeros un aleatorio del 10 al 99
         for (int i = 0; i < filas; i++) {
